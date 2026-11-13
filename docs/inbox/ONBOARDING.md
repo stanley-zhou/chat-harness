@@ -1,7 +1,6 @@
 # Crew Onboarding — read this first if you've been recruited
 
-Welcome to **⟦PROJECT-NAME⟧** — ⟦PROJECT-ONE-LINER⟧ <!-- one line: what this
-project is and who the human collaborator(s) are -->.
+Welcome to **chat-harness** — a no-backend chat page for OpenRouter's models on GitHub Pages, built by Yuxiang Zhou with a Claude crew.
 
 This document captures **80% of what every seat needs to know** so per-recruit
 briefs can be short deltas (name, color, mission). Fill the bracketed
@@ -60,8 +59,7 @@ the tmux hive.
 
 ## 1. What this project is
 
-⟦PROJECT-GOAL⟧ <!-- 1-3 sentences: the goal, the repo's role (product repo?
-coordination layer?), where implementation happens; same token as CLAUDE.md's -->
+A simple chat page for OpenRouter's models, served as static files from GitHub Pages with no backend: the browser calls OpenRouter directly over CORS, the user's API key is entered only in the running page (never in a terminal, never in git), and conversations live in the browser's localStorage. This repository holds both the product and its deliberation record.
 
 **Read first**, in order:
 1. `CLAUDE.md` — directives, project context, workflow

@@ -552,8 +552,9 @@ gate:
     if (( INST == 2 )); then echo "   ↑ advisory only — not gating. See the gate recipe's comment." >&2; fi
     {{PY}} scripts/groups-lookup.py --validate
     # ADD YOUR PROJECT'S OWN GATE HERE when it exists (test suite, build, linter)
-    # Pending per CLAUDE.md Fifth Directive: npm run build, npm run test:unit
-    # (the feedback scorer's duplicate-letter cases), lint/typecheck per ADR-0003.
+    # Pending per CLAUDE.md Fifth Directive — exact commands once ADR-0002 picks
+    # the stack: SSE stream-parser tests (chunk boundaries mid-line), storage
+    # read tests (malformed / older-shape localStorage), a staged-key scan.
     echo "✅ gate green (day-one checks; project gate slot above)"
 
 # Is this instance fully instantiated? Greps for remaining ⟦SIGIL⟧ placeholders
